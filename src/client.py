@@ -24,11 +24,11 @@ class ClientApp:
         server_label.config(bg="black", fg="green", font=("Arial", 14))
         server_label.pack()
 
-        server1_button = tk.Button(self.root, text="Сервер 1", command=lambda: self.connect_server(12345, 1))
+        server1_button = tk.Button(self.root, text="Сервер 1", command=lambda: self.connect_server(15000, 1))
         server1_button.config(bg="black", fg="green", font=("Arial", 12), activebackground="gray", highlightbackground="green")
         server1_button.pack()
 
-        server2_button = tk.Button(self.root, text="Сервер 2", command=lambda: self.connect_server(12346, 2))
+        server2_button = tk.Button(self.root, text="Сервер 2", command=lambda: self.connect_server(16000, 2))
         server2_button.config(bg="black", fg="green", font=("Arial", 12), activebackground="gray", highlightbackground="green")
         server2_button.pack()
 

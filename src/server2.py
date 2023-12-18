@@ -62,9 +62,9 @@ def server2():
 
     server_status = False
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+    port = 16000
     try:
-        server.bind(('localhost', 12346))
+        server.bind(('localhost', port))
         server.listen(5)
     except:
         error_window = tk.Tk()
@@ -76,7 +76,7 @@ def server2():
         error_label.pack()
         error_window.mainloop()
 
-    print("Server2 запущен с портом 12346")
+    print(f"Server2 запущен с портом {port}")
     server_status = True
 
     while True:
